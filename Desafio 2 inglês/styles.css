@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    z-index: 70;
+    font-family: 'Roboto', sans-serif;
+  }
+body{
+    background: linear-gradient(#00070A,#032940);
+    color: aliceblue;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+header{
+    padding: 0vw 5.208vw;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(2, 13, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+    border: outset #11334f9d;
+    z-index: 100;
+}
+header .logo{
+    width: 35vw;
+    min-width: 360px;
+}
+header ul li{
+    display: inline;
+    font-size: 1.4rem;
+    list-style: none;
+} 
+header ul li a{
+    padding: 6px 15px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+    transition: background 500ms ease-in-out;
+}
+header ul li a:hover{
+    background: aliceblue;
+    color: #00070A;
+    transition: all 500ms ease-in-out;
+}
+main{
+    transform-style: preserve-3d;
+}
+main .s1{
+    position: relative;
+    z-index: -1;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    }
+.par{
+    margin-top: 600px;
+    position: absolute;
+    height: 45vw;
+    width: 100%;
+    z-index: -1;
+    transform: translateZ(-20px) scale(3);
+}
+.bgct{
+    position: bottom;
+    height: 40vw;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.grd{
+    display: block;
+    position: relative;
+    height: 10vw;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    background: linear-gradient(#02171E,#03273d00 );
+}
+.areYou{
+    position: absolute;
+    transform: rotate(-40deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-image: url(https://png2.cleanpng.com/sh/bb698c56844303ee583a105c2d8233f9/L0KzQYm3VMA0N5V4iZH0aYP2gLBuTf1mfJJxRdluYYKwgrr6if5oNaNqjtd3Z3XkfrTsTf1mfJJxRdluYYKwg7FzifQuPF5yfeZqbD3qdbL5TcVia2U5UKhqMUKzc4S5TsE3PmY3SagAMUW1Qom4U8A0PGE8S6s3cH7q/kisspng-metal-gear-rising-revengeance-metal-gear-solid-4-metal-gear-5ac4486a120c32.1665216515228130340739.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 50;
+}
+.overlay{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #00070A;
+    z-index: 60;
+    mix-blend-mode: multiply;
+    opacity: 30%;
+    clip-path: polygon(2.3% 3.3%, 52.8% 35.8%, 96.7% 80.8%, 100% 100%, 46.9% 68%, 22.9% 37.8%);
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 20vw;
+    position: absolute;
+    text-shadow: rgba(255, 30, 0, 0.97) 0 0 19.998px;
+    cursor: all-scroll;
+}
+.s2{
+}
+.s2 h2{
+    padding-top: 2em;
+    font-size: 4vw;
+    text-align: center;
+    color: azure;
+}
+figure{
+    margin-top: 3em;
+}
+.s2 .f1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.i1{
+    width: 65vw;
+    height: 500px;
+    border-radius: 50px;
+}
+h3{
+    color: aliceblue;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px #15efff;
+}
+.f2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+    background: url(https://www.seekpng.com/png/full/18-182676_metal-gear-rising-revengeance-raiden-metal-gear-rising.png) no-repeat;
+    background-position: top;
+}
+main span{
+    display: block;
+    padding-top: 1em;
+}
+.f3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+    background: url(https://d1wmr8tlk3viaj.cloudfront.net/gallery_imgs/pngwing_8dx9COR.png) no-repeat;
+    background-position: top;
+}
+.f4{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+}
+.f4 img{
+    display: flex;
+    position: center;
+    width: 51.245vw;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #00070A;
+    z-index: -1;
+}
+.raidn{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1em;
+    width: 71.523vw;
+    height: 300px;
+    background: #022236;
+    border: inset #03111a;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    overflow: auto;
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.grdFtr{
+    display: block;
+    height: 300px;
+    width: 100%;
+    margin-bottom: -1px;
+    background: linear-gradient(#01141e00,rgb(1, 63, 117));
+}
+footer nav{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 900px;
+    width: 100%;
+    background-color: rgb(1, 63, 117);
+}
+footer a,p{
+    color: #fff;
+}
+i{
+    margin-top: -50;
+}
+@media screen and (max-width:888px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    header ul li{
+        font-size: 4vw;
+    }
+    header .logo{
+        width: 80vw;
+        min-width: 00px;
+    }
+    main .s1{
+        padding-top: 259px;
+    }
+    .areYou,.overlay{
+        width: 50vw;
+        height: 50vw;
+    }
+    h1,.areYou{
+        font-size: 5vw;
+        margin-top: -15rem;
+    }
+    .i1{
+        width: 100%;
+        height: 50vw;
+    }
+    main .raidn{
+        font-size: 1rem;
+    }
+    .f4 img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:290px) {
+    header ul li{
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .raidn{
+        width: 100%;
+    }
+}

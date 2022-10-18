@@ -105,6 +105,8 @@ main .s1{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 50;
+    background-image: url('https://cdn.vox-cdn.com/thumbor/fzq0NxVqt8HWS77RP4yeVoH_W-I=/0x175:915x785/1200x800/filters:focal(0x175:915x785)/cdn.vox-cdn.com/uploads/chorus_image/image/5136281/metal.0.jpg');
+    clip-path: polygon(2.3% 3.3%, 52.8% 35.8%, 96.7% 80.8%, 100% 100%, 46.9% 68%, 22.9% 37.8%);
 }
 .overlay{
     position: absolute;
@@ -115,9 +117,6 @@ main .s1{
     mix-blend-mode: multiply;
     opacity: 30%;
     clip-path: polygon(2.3% 3.3%, 52.8% 35.8%, 96.7% 80.8%, 100% 100%, 46.9% 68%, 22.9% 37.8%);
-}
-.overlay img(
-background-image: url('https://cdn.vox-cdn.com/thumbor/fzq0NxVqt8HWS77RP4yeVoH_W-I=/0x175:915x785/1200x800/filters:focal(0x175:915x785)/cdn.vox-cdn.com/uploads/chorus_image/image/5136281/metal.0.jpg');
 )
 
 h1{
